@@ -3,5 +3,7 @@ import ReactDOM from 'react-dom';
 import './stylesheets/main.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+document.addEventListener("DOMContentLoaded", () => {
+  const root = document.getElementById('root');
+  ReactDOM.render(<App />, root);
+})

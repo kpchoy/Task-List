@@ -38,7 +38,6 @@ const initialState = {
 export default (state = initialState, action) => {
   Object.freeze(state);
   let nextState = {};
-
   switch (action.type) {
   case RECEIVE_TASKS:
     action.tasks.forEach(task => {

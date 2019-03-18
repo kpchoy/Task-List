@@ -5,7 +5,7 @@ import TaskListForm from './task_list_form.js';
 export default class taskList extends Component {
 
   render() {
-    const {receiveTask} = this.props.receiveTask;
+    const {receiveTask} = this.props;
     
     const tasks = this.props.tasks.map(task => {
       return (
@@ -26,7 +26,7 @@ export default class taskList extends Component {
         </ul>
 
         <h2>Task Form</h2>
-
+        <TaskListForm receiveTask={receiveTask}/>
 
       </div>
     )
